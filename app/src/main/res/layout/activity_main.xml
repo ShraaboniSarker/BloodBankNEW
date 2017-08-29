@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:orientation="vertical"
+        tools:context="com.example.shraaboni.bloodbank.MainActivity">
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_bank"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Fill Up the form"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/nameET"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="enter your name" />
+
+        <Spinner
+            style="@style/spinnerDropDownItemStyle"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bloodSP"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your blood group"
+            android:spinnerMode="dropdown"/>
+
+        <RadioGroup
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/genderRG"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:hint="enter your gender" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Female"
+                android:textSize="18dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Male"
+                android:textSize="18dp"
+                />
+
+        </RadioGroup>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="enter your email" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:text="Register"
+            android:selectAllOnFocus="false"
+            android:onClick="signUp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"/>
+
+        <TextView
+            android:onClick="moveToLogin"
+            android:gravity="center"
+            android:text="Already registered user? login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

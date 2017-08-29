@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.example.shraaboni.bloodbanknew.AboutUs">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/blood_bank"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:layout_height="wrap_content"
+        android:text="This page is a blood donation influencing app.Using this app we can easily donate and search for available group of blood for specific people. This is a public servicing app."
+        android:textSize="24dp"
+        />
+
+</LinearLayout>

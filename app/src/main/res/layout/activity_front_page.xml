@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.example.shraaboni.bloodbanknew.FrontPage">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_bank"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_below="@+id/txt1"
+            android:text="save humans life"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#716969"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Sir :"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood bank is an app to helpand connects peoples with the same blood typein the same location.you can request blood donation help or ask someone to help."
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="LogIn"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttons"
+        android:onClick="gotoLogin"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SignUp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:background="@drawable/buttons"
+        android:onClick="gotoSignup"/>
+
+
+</LinearLayout>
