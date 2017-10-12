@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back"
-    tools:context="com.example.shraaboni.bloodbanknew.FrontPage">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/backgraound"
+    tools:context="com.example.shraaboni.bloodbanknew.Activity.FrontPage">
+
+
         <TextView
             android:id="@+id/txt1"
             android:layout_width="match_parent"
@@ -19,42 +20,13 @@
             android:gravity="center"
             android:textSize="30dp"
             android:layout_marginTop="30dp"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             />
 
-        <TextView
-            android:layout_below="@+id/txt1"
-            android:text="save humans life"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="120dp"
-            android:textSize="15dp"
-            android:layout_marginBottom="30dp"
-            android:textColor="#716969"
-            android:textStyle="bold"/>
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome Sir :"
-        android:textStyle="bold"
-        android:textSize="24dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="10dp"
-        />
-    <TextView
-        android:padding="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Blood bank is an app to helpand connects peoples with the same blood typein the same location.you can request blood donation help or ask someone to help."
-        android:textSize="20dp"
-        />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -67,7 +39,7 @@
         android:background="@drawable/buttons"
         android:onClick="gotoLogin"/>
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -80,5 +52,13 @@
         android:background="@drawable/buttons"
         android:onClick="gotoSignup"/>
 
-
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+       />
 </LinearLayout>

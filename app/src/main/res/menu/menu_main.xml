@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/Profile"
+    android:icon="@drawable/profile"
+    android:orderInCategory="100"
+    android:title="User Profile"
+    >
+</item>
+    <item
+        android:id="@+id/Request"
+        android:icon="@drawable/requst"
+        android:orderInCategory="100"
+        android:title="Request Panel"
+        >
+    </item>
+    <item
+        android:id="@+id/Mapview"
+        android:icon="@drawable/mapview"
+        android:orderInCategory="100"
+        android:title="Map View"
+        >
+    </item>
+
+    <item
+        android:id="@+id/Logout"
+        android:icon="@drawable/logout"
+        android:orderInCategory="100"
+        android:title="Log out"
+        >
+    </item>
+
+</menu>

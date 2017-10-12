@@ -1,4 +1,4 @@
-package com.example.shraaboni.bloodbanknew;
+package com.example.shraaboni.bloodbanknew.Model;
 
 /**
  * Created by shraaboni on 8/3/2017.

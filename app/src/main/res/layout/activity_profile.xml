@@ -8,9 +8,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/back"
+        android:background="@color/backgraound"
         android:orientation="vertical"
         tools:context="com.example.shraaboni.bloodbank.Profile">
+
 
         <TextView
             android:layout_width="match_parent"
@@ -20,7 +21,7 @@
             android:textSize="34dp"
             android:textStyle="bold"
             android:padding="10dp"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorPrimaryDark"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,28 +31,25 @@
             android:textStyle="bold"
             android:padding="10dp"
             android:layout_marginBottom="20dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/blood"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Name:"
-                android:layout_margin="10dp"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
-
             <EditText
                 android:id="@+id/name"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
                 android:textSize="15dp"
+                android:layout_marginLeft="20dp"
                 android:inputType="textPersonName"
-                android:hint="enter your name" />
+                android:hint="User Name" />
 
         </LinearLayout>
 
@@ -60,23 +58,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="User Area:"
-                android:layout_margin="10dp"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
-
             <EditText
                 android:id="@+id/address"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_marginLeft="20dp"
                 android:textSize="15dp"
-                android:hint="enter your area" />
+                android:hint="User Area" />
 
         </LinearLayout>
 
@@ -85,23 +73,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Blood group:"
-                android:layout_margin="10dp"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/bloodgrp"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_marginLeft="20dp"
                 android:textSize="15dp"
-                android:hint="enter your bloodgroup" />
+                android:hint="Blood Group" />
 
         </LinearLayout>
 
@@ -109,23 +88,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Gender:"
-                android:layout_margin="10dp"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/gender"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_marginLeft="20dp"
                 android:textSize="15dp"
-                android:hint="enter your gender" />
+                android:hint="Gender" />
 
         </LinearLayout>
 
@@ -134,24 +104,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Bleeding Date:"
-                android:layout_margin="10dp"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/bleedingdate"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_marginLeft="20dp"
                 android:textSize="15dp"
                 android:inputType="datetime"
-                android:hint="enter your bleeding date" />
+                android:hint="Donation date" />
 
         </LinearLayout>
 
@@ -160,24 +121,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Phone No:"
-                android:layout_margin="10dp"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
-
             <EditText
                 android:id="@+id/phoneno"
-                android:layout_width="wrap_content"
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_marginLeft="20dp"
                 android:textSize="15dp"
                 android:inputType="phone"
-                android:hint="enter your phone no." />
+                android:hint="Phone No." />
 
         </LinearLayout>
 

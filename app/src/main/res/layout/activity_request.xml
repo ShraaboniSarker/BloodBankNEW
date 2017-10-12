@@ -5,8 +5,8 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-    android:background="@drawable/back"
-tools:context="com.example.shraaboni.bloodbanknew.RequestActivity">
+    android:background="@color/backgraound"
+tools:context="com.example.shraaboni.bloodbanknew.Activity.RequestActivity">
 
     <TextView
         android:id="@+id/txt1"
@@ -17,20 +17,12 @@ tools:context="com.example.shraaboni.bloodbanknew.RequestActivity">
         android:gravity="center"
         android:textSize="30dp"
         android:layout_marginTop="30dp"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
+        android:layout_marginBottom="40dp"
         />
 
-    <TextView
-        android:text="save humans life"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
-        android:textSize="15dp"
-        android:layout_marginBottom="30dp"
-        android:textColor="#716969"
-        android:textStyle="bold"
-        android:paddingBottom="30dp"/>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -42,8 +34,8 @@ tools:context="com.example.shraaboni.bloodbanknew.RequestActivity">
         />
     <View
         android:layout_width="170dp"
-        android:layout_height="2dp"
-        android:background="#000"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"
         android:layout_margin="10dp"
         android:paddingBottom="30dp"
         ></View>
@@ -52,23 +44,14 @@ tools:context="com.example.shraaboni.bloodbanknew.RequestActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Request:"
-            android:layout_margin="10dp"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:padding="10dp"/>
 
         <EditText
             android:id="@+id/request"
-            android:layout_width="150dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_margin="10dp"
             android:textSize="15dp"
-            android:hint="enter your required blood group" />
+            android:hint="Required Blood Group" />
 
     </LinearLayout>
 
@@ -76,47 +59,28 @@ tools:context="com.example.shraaboni.bloodbanknew.RequestActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No.of bags:"
-            android:layout_margin="10dp"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:padding="10dp"/>
 
         <EditText
             android:id="@+id/bag"
-            android:layout_width="200dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_margin="10dp"
             android:textSize="15dp"
             android:inputType="number"
-            android:hint="enter No. of bags" />
+            android:hint="No. of Bags" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Area :"
-            android:layout_margin="10dp"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:padding="10dp"/>
-
         <EditText
             android:id="@+id/area"
-            android:layout_width="130dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_margin="10dp"
             android:textSize="15dp"
-            android:hint="enter your required area" />
+            android:hint="Area" />
 
     </LinearLayout>
     <Button
@@ -124,11 +88,22 @@ tools:context="com.example.shraaboni.bloodbanknew.RequestActivity">
         android:layout_height="wrap_content"
         android:text="Post"
         android:textSize="18dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="right"
         android:layout_marginRight="40dp"
         android:background="@drawable/buttons"
         android:onClick="PostRequest"
         android:padding="20dp"/>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Post Request to Facbook"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buttons"
+        android:padding="20dp"/>
 </LinearLayout>

@@ -1,7 +1,9 @@
-package com.example.shraaboni.bloodbanknew;
+package com.example.shraaboni.bloodbanknew.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.shraaboni.bloodbanknew.R;
 
 public class AboutUs extends AppCompatActivity {
 

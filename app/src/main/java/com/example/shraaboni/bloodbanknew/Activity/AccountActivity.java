@@ -1,4 +1,4 @@
-package com.example.shraaboni.bloodbanknew;
+package com.example.shraaboni.bloodbanknew.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,13 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.example.shraaboni.bloodbanknew.R;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
 
 public class AccountActivity extends AppCompatActivity {
 
@@ -32,16 +27,16 @@ public class AccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account);
         Intent intent = getIntent();
         key= intent.getStringExtra(key);
-        email = intent.getStringExtra("email");
-        name = intent.getStringExtra("name");
-        bloodgrp = intent.getStringExtra("bloodgrp");
-        gender = intent.getStringExtra("gender");
-        nameTV = (TextView) findViewById(R.id.name);
-        bloodgrpTV = (TextView) findViewById(R.id.bloodgrp);
-        genderTV = (TextView) findViewById(R.id.gender);
-        nameTV.setText(name);
-        bloodgrpTV.setText(bloodgrp);
-        genderTV.setText(gender);
+        email = intent.getStringExtra(email);
+//        name = intent.getStringExtra("name");
+//        bloodgrp = intent.getStringExtra("bloodgrp");
+//        gender = intent.getStringExtra("gender");
+//        nameTV = (TextView) findViewById(R.id.name);
+//        bloodgrpTV = (TextView) findViewById(R.id.bloodgrp);
+//        genderTV = (TextView) findViewById(R.id.gender);
+//        nameTV.setText(name);
+//        bloodgrpTV.setText(bloodgrp);
+//        genderTV.setText(gender);
 
         /*dataref = FirebaseDatabase.getInstance().getReference("user");
         dataref.addValueEventListener(new ValueEventListener() {

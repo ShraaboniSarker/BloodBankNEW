@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.shraaboni.bloodbanknew.Activity.SplashActivity">
+
+    <me.wangyuwei.particleview.ParticleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pv_background_color="#2E2E2E"
+        app:pv_host_text="Welcome to"
+        android:id="@+id/mparticle"
+        app:pv_host_text_size="14sp"
+        app:pv_particle_text="Super Donor"
+        app:pv_particle_text_size="20sp"
+        app:pv_text_color="#FFF"
+        app:pv_text_anim_time="3000"
+        app:pv_spread_anim_time="4000"
+        app:pv_host_text_anim_time="3000" />
+
+</LinearLayout>

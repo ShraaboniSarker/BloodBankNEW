@@ -1,14 +1,24 @@
-package com.example.shraaboni.bloodbanknew;
+package com.example.shraaboni.bloodbanknew.Activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Explode;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.shraaboni.bloodbanknew.Model.Constants;
+import com.example.shraaboni.bloodbanknew.Model.Person;
+import com.example.shraaboni.bloodbanknew.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -28,6 +38,9 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     private EditText emailET;
     private EditText passwordET;
+    Constants.Animtype type;
+    String animName;
+
 
     FirebaseAuth.AuthStateListener authStateListener;
     ArrayList<String> infoList;
@@ -41,10 +54,14 @@ public class LoginActivity extends AppCompatActivity {
     String key;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().requestFeature(getWindow().FEATURE_CONTENT_TRANSITIONS);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        type = (Constants.Animtype) getIntent().getSerializableExtra(Constants.KEY_TYPE);
+        animName = getIntent().getExtras().getString(Constants.KEY_NAME);
         Intent intent = getIntent();
         key = intent.getStringExtra("key");
         emailET = (EditText) findViewById(R.id.emailET);
@@ -88,8 +105,17 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });*/
-
+        setUpAnimation();
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void setUpAnimation() {
+
+        Explode transition = new Explode();
+        transition.setDuration(500);
+        getWindow().setEnterTransition(transition);
+    }
+
     public void login(View view) {
         final String email = emailET.getText().toString();
         String password = passwordET.getText().toString();
@@ -99,6 +125,7 @@ public class LoginActivity extends AppCompatActivity {
               //  Toast.makeText(LoginActivity.this, "" + firebaseAuth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
                 if (task.isSuccessful()) {
                     Toast.makeText(LoginActivity.this, "" + firebaseAuth.getCurrentUser().getEmail(), Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
@@ -129,12 +156,10 @@ public class LoginActivity extends AppCompatActivity {
 
                     }
                     Intent intent=new Intent(LoginActivity.this,AccountActivity.class);
-                    intent.putExtra("name",name);
-                    intent.putExtra("bloodgrp",bloodgrp);
-                    intent.putExtra("gender",gender);
                     intent.putExtra("email",email);
                     intent.putExtra("key",key);
                     startActivity(intent);
+
                 }
 
             }

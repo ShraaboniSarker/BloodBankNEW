@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back"
-    tools:context="com.example.shraaboni.bloodbanknew.AboutUs">
+    android:background="@color/backgraound"
+    tools:context="com.example.shraaboni.bloodbanknew.Activity.AboutUs">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,14 +16,29 @@
         android:textSize="24dp"
         android:textStyle="bold"
         android:padding="10dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
 
-        android:textColor="@color/colorAccent"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/element"
+        app:cardCornerRadius="7dp">
     <TextView
         android:layout_width="match_parent"
         android:padding="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#fff"
         android:text="This page is a blood donation influencing app.Using this app we can easily donate and search for available group of blood for specific people. This is a public servicing app."
         android:textSize="24dp"
         />
-
+</android.support.v7.widget.CardView>
 </LinearLayout>
